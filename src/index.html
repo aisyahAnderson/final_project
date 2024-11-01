@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Finder - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* fullscreen background video styling */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            z-index: -1; 
+        }
+
+        /* styling for each video */
+        .background-video {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* navigation bar styling */
+        .navbar {
+            background-color: #6b8e23;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; 
+            z-index: 2; 
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* container styling */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 90%;
+            max-width: 500px;
+            max-height: 80%; 
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #6b8e23;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #556b2f;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #a2cfa1;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #8cbf91;
+            transform: translateY(-3px);
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- background videos container -->
+    <div class="video-container">
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="vid1.mp4" type="video/mp4">
+        </video>
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="vid2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="navbar">
+        <h1>Beauty Finder</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="makeup-list.html">Browse Products</a>
+            <a href="wishlist.html">My Wishlist</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="logo">Welcome, Aisyah!</div>
+        <div class="subtitle">Discover the best beauty products just for you.</div>
+        <a href="makeup-list.html" class="btn">Browse Products</a>
+        <div class="footer">© 2024 Beauty Finder. All rights reserved.</div>
+    </div>
+</body>
+</html>

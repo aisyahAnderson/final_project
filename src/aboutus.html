@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Beauty Finder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* background image */
+        body {
+            background-image: url('pic3.jpeg'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* navigation bar styling */
+        .navbar {
+            background-color: #6b8e23; 
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* isi container */
+        .container {
+            position: relative;
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            margin: 40px auto;
+            background-color: rgba(122, 150, 122, 0.9); 
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+        }
+
+        /* title styling */
+        h1 {
+            font-size: 2.5em;
+            color: #556b2f; /* Dark olive green */
+            margin-bottom: 20px;
+        }
+
+        /* paragraph styling */
+        p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* contact info styling */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* button styling */
+        .btn {
+            text-decoration: none;
+            color: white;
+            background-color: #a2cfa1; /* Light green */
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #8cbf91; 
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Beauty Finder</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="makeup-list.html">Browse Products</a>
+            <a href="wishlist.html">My Wishlist</a>
+            <a href="contactus.html">About Us</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to Beauty Finder! We help you discover the best beauty products suited to your unique style and needs.</p>
+
+        <div class="contact-info">
+            <p>Email: <a href="mailto:yummusyah@gmail.com">yummusyah@gmail.com</a></p>
+            <p>Contact Us: +6012-3456789</p>
+            <p>Follow us for updates and special offers!</p>
+        </div>
+
+        <a href="makeup-list.html" class="btn">Discover Our Products</a>
+    </div>
+</body>
+</html>
